@@ -1,32 +1,38 @@
 import React from 'react';
+import cafeInteriorImg from './images/cafe.png';
+import Navbar from './Component/NavBar.jsx';
 
-export default function AboutUs() {
+function AboutUs() {
   return (
     <div className="min-h-screen bg-stone-50">
+      <Navbar />
       {/* Header Section */}
       <header className="bg-stone-800 text-white py-20 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Our Story</h1>
         <p className="text-lg md:text-xl text-stone-300 max-w-2xl mx-auto">
-          More than just a coffee shop. We are a community hub for thinkers, creators, and everyday coffee lovers in Johannesburg.
+          More than just a coffee shop. We are a community hub for thinkers, creators, and everyday coffee lovers in Soweto, Orlando west.
         </p>
       </header>
 
       {/* Main Content */}
       <main className="max-w-5xl mx-auto py-16 px-6">
         <div className="flex flex-col md:flex-row gap-12 items-center mb-16">
-          {/* Image Placeholder - You can swap the div for an <img> tag later */}
-          <div className="flex-1 w-full bg-stone-300 rounded-xl h-64 md:h-96 flex items-center justify-center shadow-inner">
-            <span className="text-stone-500 font-medium">[Cafe Interior Image Placeholder]</span>
-          </div>
+          
+          {/* 🎯 FIX: The placeholder <div> is gone, leaving only the beautifully styled <img> */}
+          <img 
+            src={cafeInteriorImg} 
+            alt="Cafe Interior" 
+            className="w-full h-auto md:max-h-[450px] object-cover" 
+          />
           
           {/* Text Content */}
           <div className="flex-1">
             <h2 className="text-3xl font-bold text-stone-800 mb-4">How It All Started</h2>
             <p className="text-stone-600 mb-4 leading-relaxed">
-              We started with a simple idea: to create a space that fuels both the body and the mind. Whether you're a student crunching numbers for a computer science degree, an entrepreneur drafting up your next startup proposal, or just someone looking for a perfect flat white, this space was built for you.
+              Thrive Café began when co-founder Thembi Mahlangu, a former barista, set out to elevate Soweto's coffee scene. She envisioned a chic, modern space on the iconic Vilakazi Street that blends high-quality coffee with a menu bridging local flavors and contemporary dining, turning her passion for the craft into a landmark destination.
             </p>
             <p className="text-stone-600 leading-relaxed">
-              We source our beans locally and roast them in-house to ensure every cup is as fresh as possible. Our tables have plenty of power outlets, and our Wi-Fi is always fast, because we know how important it is to stay connected while you work or relax.
+              Thrive Café was born from the passion of former barista Thembi Mahlangu, who wanted to bring a high-end, modern coffee experience to the heart of Soweto. By setting up on iconic Vilakazi Street, she successfully turned her love for the craft into a chic destination that celebrates both local culture and contemporary dining.
             </p>
           </div>
         </div>

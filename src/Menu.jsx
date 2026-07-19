@@ -1,6 +1,5 @@
 import React from 'react';
-
-// 1. Import all your menu images from the assets folder
+import Navbar from './Component/NavBar.jsx';
 import espressoImg from './images/espresso.webp';
 import flatWhiteImg from './images/flat_white.jpg';
 import vanillaLatteImg from './images/vanila_latte.webp';
@@ -46,6 +45,7 @@ function Menu() {
     <div className="min-h-screen bg-stone-50 py-16 px-6">
       {/* Page Header */}
       <header className="text-center mb-16">
+        <Navbar />
         <h1 className="text-4xl md:text-5xl font-extrabold text-stone-800 mb-4">Our Menu</h1>
         <p className="text-lg text-stone-600">Carefully crafted drinks and fresh bites.</p>
       </header>
