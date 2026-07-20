@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from './Component/NavBar.jsx';
 
 function Location() {
   return (
@@ -7,6 +8,7 @@ function Location() {
       <header className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-extrabold text-stone-800 mb-4">Find Us</h1>
         <p className="text-lg text-stone-600">Come through for a fresh brew and great vibes.</p>
+        <Navbar />
       </header>
 
       <main className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -42,7 +44,7 @@ function Location() {
           
           <div className="border-t border-stone-100 pt-4">
             <p className="text-sm text-stone-500">Contact Number</p>
-            <p className="text-stone-800 font-medium">27 (0)11 536 1838</p>
+            <p className="text-stone-800 font-medium">+27 (0)11 536 1838</p>
           </div>
         </div>
       </main>
