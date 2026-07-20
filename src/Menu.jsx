@@ -12,7 +12,7 @@ import avoToastImg from './images/avocado_toast.jpg';
 import muffinImg from './images/blueberry_muffin.jpg';
 
 function Menu() {
-  // 2. Added the 'image' property to each item in the menu data array
+  
   const menuData = [
     {
       category: "Espresso Bar",
@@ -43,30 +43,30 @@ function Menu() {
 
   return (
     <div className="min-h-screen bg-stone-50 py-16 px-6">
-      {/* Page Header */}
+      
       <header className="text-center mb-16">
         <Navbar />
         <h1 className="text-4xl md:text-5xl font-extrabold text-stone-800 mb-4">Our Menu</h1>
         <p className="text-lg text-stone-600">Carefully crafted drinks and fresh bites.</p>
       </header>
 
-      {/* Menu Categories */}
+    
       <main className="max-w-5xl mx-auto">
         {menuData.map((section, index) => (
           <div key={index} className="mb-16">
-            {/* Category Title */}
+           
             <h2 className="text-2xl font-bold text-stone-800 mb-8 border-b-2 border-stone-200 pb-2">
               {section.category}
             </h2>
             
-            {/* Optimized Grid Layout for Cards with Images */}
+       
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {section.items.map((item, itemIndex) => (
                 <div 
                   key={itemIndex} 
                   className="bg-white rounded-xl shadow-sm border border-stone-100 flex overflow-hidden hover:shadow-md transition-shadow h-36 sm:h-40"
                 >
-                  {/* 3. Image Section */}
+                  
                   <div className="w-28 sm:w-36 flex-shrink-0 bg-stone-100">
                     <img 
                       src={item.image} 
@@ -75,7 +75,7 @@ function Menu() {
                     />
                   </div>
 
-                  {/* Text Details Section */}
+                 
                   <div className="p-4 sm:p-5 flex flex-col justify-between flex-grow min-w-0">
                     <div>
                       <div className="flex justify-between items-baseline mb-1 gap-2">

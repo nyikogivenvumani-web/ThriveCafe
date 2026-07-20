@@ -6,7 +6,7 @@ function AboutUs() {
   return (
     <div className="min-h-screen bg-stone-50">
       <Navbar />
-      {/* Header Section */}
+     
       <header className="bg-stone-800 text-white py-20 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Our Story</h1>
         <p className="text-lg md:text-xl text-stone-300 max-w-2xl mx-auto">
@@ -14,18 +14,18 @@ function AboutUs() {
         </p>
       </header>
 
-      {/* Main Content */}
+     
       <main className="max-w-5xl mx-auto py-16 px-6">
         <div className="flex flex-col md:flex-row gap-12 items-center mb-16">
           
-          {/* 🎯 FIX: The placeholder <div> is gone, leaving only the beautifully styled <img> */}
+         
           <img 
             src={cafeInteriorImg} 
             alt="Cafe Interior" 
             className="w-full h-auto md:max-h-[450px] object-cover" 
           />
           
-          {/* Text Content */}
+        
           <div className="flex-1">
             <h2 className="text-3xl font-bold text-stone-800 mb-4">How It All Started</h2>
             <p className="text-stone-600 mb-4 leading-relaxed">
@@ -37,7 +37,7 @@ function AboutUs() {
           </div>
         </div>
 
-        {/* Core Values */}
+       
         <section className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div className="p-6 bg-white rounded-lg shadow-sm border border-stone-100">
             <h3 className="text-xl font-bold text-stone-800 mb-2">Community First</h3>
