@@ -6,9 +6,10 @@ function Location() {
     <div className="min-h-screen bg-stone-50 py-16 px-6">
    
       <header className="text-center mb-16">
+         <Navbar />
         <h1 className="text-4xl md:text-5xl font-extrabold text-stone-800 mb-4">Find Us</h1>
         <p className="text-lg text-stone-600">Come through for a fresh brew and great vibes.</p>
-        <Navbar />
+       
       </header>
 
       <main className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
