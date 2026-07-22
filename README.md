@@ -21,3 +21,5 @@ Build Tool: Vite
 Styling: Tailwind CSS
 
 Routing: React Router
+
+live deployment: thrivecafe.netlify.app
